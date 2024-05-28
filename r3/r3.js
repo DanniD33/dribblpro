@@ -258,7 +258,7 @@ InfiniteRunner.update = function() {
   this.player.update();
 
   switch(this.jumpCount){
-    case 10:
+    case 5:
       this.acelerationTweening = 1;
       this.platformManager.maxDistanceBetween = 430;
       this.scoreColor = '#076C00';
