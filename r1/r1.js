@@ -7,16 +7,27 @@ let counter=0;
 document.addEventListener('DOMContentLoaded', function() {
     const audio = document.getElementById('myAudio');
     // Check if audio is paused (in case autoplay failed)
-    if (audio.paused) {
-        audio.play()
-            .then(() => {
-                console.log('Audio autoplay started');
-            })
-            .catch((error) => {
-                console.error('Autoplay prevented:', error);
-                // Handle autoplay failure
-            });
-    }
+    // if (audio.paused) {
+    //     audio.play()
+    //         .then(() => {
+    //             console.log('Audio autoplay started');
+    //         })
+    //         .catch((error) => {
+    //             console.error('Autoplay prevented:', error);
+    //             // Handle autoplay failure
+    //         });
+    // }
+        // Event listener for the play button
+        playButton.addEventListener('click', function() {
+            audio.play()
+                .then(() => {
+                    console.log('Audio playback initiated by user');
+                })
+                .catch((error) => {
+                    console.error('Failed to play audio:', error);
+                    // Handle playback failure
+                });
+        });
 });
 
 
