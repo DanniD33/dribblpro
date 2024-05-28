@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     //         });
     // }
         // Event listener for the play button
-        playButton.addEventListener('click', function() {
+        document.body.addEventListener('click', function() {
             audio.play()
                 .then(() => {
                     console.log('Audio playback initiated by user');
