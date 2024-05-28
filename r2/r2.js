@@ -892,7 +892,7 @@ function makeMaze() {
 
 		toggleVisablity("Message-Container");
 		document.getElementById("victory").play();
-		// window.location.href = "/extended";
+		window.location.href = "/infinity";
 		// window.location.href = "http://localhost:5000/extended";
 		// window.location.href = "http://localhost:8080/extended";
 
