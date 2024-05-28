@@ -17,9 +17,9 @@ body {
   background-size: cover;
 }
 
-/* body audio{
+body audio{
   display: none;
-} */
+}
 
 .game{
   width: 800px;

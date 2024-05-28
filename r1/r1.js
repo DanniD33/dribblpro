@@ -2,6 +2,26 @@ let character = document.getElementById("character");
 let block = document.getElementById("block");
 let owl = document.getElementById("owl");
 let counter=0;
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const audio = document.getElementById('myAudio');
+    // Check if audio is paused (in case autoplay failed)
+    if (audio.paused) {
+        audio.play()
+            .then(() => {
+                console.log('Audio autoplay started');
+            })
+            .catch((error) => {
+                console.error('Autoplay prevented:', error);
+                // Handle autoplay failure
+            });
+    }
+});
+
+
+
+
 function jump(){
     if(character.classList == "animate"){return}
     character.classList.add("animate");
