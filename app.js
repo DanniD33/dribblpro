@@ -8,9 +8,10 @@ require('dotenv').config();
 
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'main.html'));
+  res.sendFile(path.join(__dirname, '/r1/r1.html'));
 });
 
+app.use(express.static(path.join(__dirname, './r1')));
 
 app.listen(port, () => {
   console.log(`Example app listening on outer endpoints port ${port}`);
