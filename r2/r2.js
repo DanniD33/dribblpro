@@ -700,12 +700,12 @@ window.onload = function () {
 	sprite = new Image();
 	sprite.src =
 		// "https://i.ibb.co/c8DnVSG/1-12-icon-icons-com-68880.png" 
-		"./r2assets/kdpunchleft.png";
+		"./r2assets/kdpunchleftred.png";
 		// + "?" +
 		// new Date().getTime();
 	sprite.setAttribute("crossOrigin", " ");
 	sprite.onload = function () {
-		sprite = changeBrightness(1.2, sprite);
+		sprite = changeBrightness(1.7, sprite);
 		completeOne = true;
 		console.log(completeOne);
 		isComplete();
